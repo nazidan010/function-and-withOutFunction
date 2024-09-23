@@ -11,10 +11,9 @@ document.getElementById('btn-confirm').addEventListener('click', function(event)
         const newBalance=balance+addMoney;
         // console.log(newBalance);
         document.getElementById('account-balance').innerText=newBalance;
-        //add to transaction entry>>>>>
+        //add money to transaction entry>>>>>
         const entry=document.createElement('p');
         entry.innerText=`CashIn: ${addMoney} Tk. Balance: ${newBalance}`;
-        // console.log(entry);
         // should be a common function>>>>
         document.getElementById('history').appendChild(entry);
     }
