@@ -4,8 +4,18 @@ document.getElementById('btn-cash-out-money').addEventListener('click', function
     event.preventDefault();
     const cashOutNumber=getInputFieldValueById('input-cash-out');
     const pinNumber=getInputFieldValueById('input-cash-out-pin');
+    //Not a number>>>
+    if(isNaN(cashOutNumber)){
+        alert('Failed to Cash Out');
+        return;
+    }
     if(pinNumber===1111){
         const currentBalance=getTextFieldValueById('account-balance');
+        // Un able Balance
+            if(currentBalance > cashOutNumber){
+                alert('You do not have enough money,try again')
+                return;
+            } 
         const newBalance=currentBalance-cashOutNumber;
         document.getElementById('account-balance').innerText=newBalance;
         // History start
