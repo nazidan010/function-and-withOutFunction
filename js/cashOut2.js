@@ -10,7 +10,9 @@ document.getElementById('btn-cash-out-money').addEventListener('click', function
         document.getElementById('account-balance').innerText=newBalance;
         // History start
         const outEntry=document.createElement('p');
-        outEntry.innerText=`CashOut: ${cashOutNumber} Tk. Balance ${newBalance}`;
+        outEntry.innerText=`
+        CashOut: ${cashOutNumber} Tk. Balance ${newBalance}
+        `;
         // Show display
         document.getElementById('history').appendChild(outEntry);
         // History End
