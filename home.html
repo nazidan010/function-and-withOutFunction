@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payoo MFS Function</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- !With Function Use -->
+<!-- home.html....cash.js....button2.js...addMoney2.js....utiliteis.js
+Function use>>>>With function -->
+
+<!-- !With Out Function
+ home.html....addMoney.js....button.js....cashOut.js.... -->
+ 
+</head>
+<body>
+    <main class="flex justify-center">
+        <!-- Daisy UI Phone -->
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <!-- Account Balance -->
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div>Account Balance</div>
+                      <div id="account-balance" class="stat-value">10000</div>
+                    </div>
+                  </div>
+                  <!-- Divider -->
+                   <div class="divider"></div>
+
+                <!-- Features -->
+                
+                 <div>
+                  <!-- Button start -->
+                    <button id="btn-add-money" class="btn btn-outline btn-success">Add Money</button>
+                <button id="btn-cash-out" class="btn btn-outline btn-error">Cash Out</button>
+                <button id="transaction" class="btn btn-info">Transaction</button>
+                <!-- Button End -->
+                <!-- Divider -->
+                <div class="divider"></div>
+                 <!-- Feature add money Start -->
+                 <div id="add-money-page" class="card bg-base-100">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Money</span>
+                        </label>
+                        <input id="input-add-money" type="text" placeholder="Enter Add Money" class="input input-bordered" required autocomplete="off" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">PIN</span>
+                        </label>
+                        <input id="input-pin" type="password" placeholder="Enter PIN" class="input input-bordered" required autocomplete="off" />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-confirm" class="btn btn-primary bg-green-700">Confirm</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Feature add money End -->
+
+                   <!-- Feature Cash Out Start -->
+                    
+                 <div id="cash-out-page" class="card bg-base-100 hidden">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Cash Out</span>
+                        </label>
+                        <input id="input-cash-out" type="text" placeholder="Enter Cash Out" class="input input-bordered" required autocomplete="off" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">PIN</span>
+                        </label>
+                        <input id="input-cash-out-pin" type="password" placeholder="Enter PIN" class="input input-bordered" required autocomplete="off" />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-cash-out-money" class="btn btn-primary bg-red-700">Confirm Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                 </div>
+                 <!-- Feature Cash Out End -->
+                  <!-- Transaction Start -->
+               <div id="history" class="hidden">
+                <h2 class="text-5xl text-center">Transaction History</h2>
+               </div>
+              <!-- Transaction End -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/cashOut.js"></script>
+    <script src="./js/addMoney2.js"></script>
+    <script src="./js/utiliteis.js"></script>
+    <script src="./js/cashOut2.js"></script>
+    <script src="./js/button2.js"></script>
+</body>
+</html>
